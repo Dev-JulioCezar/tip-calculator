@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="../assets/styles/main.css">
+
+  <script type="module" src="../assets/scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>SPLI <br> TTER</h1>              
+  </header>
+  
+  <main>
+    <aside id="menuAside" class="menuAside menuExtrato">
+      <ul>
+        <li><Button data-containerPratos="pratos" id="pratos"><img src="../images/dinner-icon.svg" alt=""></li>
+        <li><button data-containerCalculadora="calculadora" id=""><img src="../images/earn-icon.svg" alt=""></li>
+        <li><button data-containerExtrato="extrato" id=""><img src="../images/price-list-icon.svg" alt=""></button></li>
+      </ul>
+    </aside>
+
+
+
+    <div data-containerPratos="pratos" class="container containerPratos">
+      <button>
+        <span>ENTRADAS</span>
+        <img src="../images/icons8-batata-frita-96.png" width="60" alt="">
+      </button>
+      <button>
+        <span>PRATOS PRINCIPAIS</span>
+        <img src="../images/icons8-espaguete-64.png" width="60" alt="">
+      </button>
+      <button>
+        <span>SOBREMESAS</span>
+        <img src="../images/icons8-emoji-de-cupcake-96.png" width="60" alt="">
+      </button>
+      <button>
+        <span>BEBIDAS</span>
+        <img src="../images/icons8-coquetel-80.png" width="60" alt="">
+      </button>
+    </div>
+
+    <div data-containerCalculadora="calculadora" class="container containerCalculadora">
+
+      <div class="form">
+        <h2>Gorjeta</h2>
+        <div class="bill">
+          <label for="dolar">Bill</label> <br>
+          <input type="number" name="dolar" id="dolar" placeholder="0">
+        </div>
+
+        <div class="selectTip" id="selectTipPor">
+          <p>Select Tip %</p>
+          <div>
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="number" name="porcent" id="porcent" placeholder="Custom">
+          </div>
+        </div>
+
+        <div class="numberPeople">
+          <label for="number">Number of People</label> <br>
+          <input type="number" name="number" id="number" placeholder="0" required="true">
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="tips">
+
+          <div class="box">
+            <p class="firstP">
+              Tip Amount <br>
+              <span class="person">/ person</span>
+            </p>
+            <p class="amountValue">
+              $0.00
+            </p>
+          </div>
+
+          <div class="box">
+            <p class="firstP">
+              Total <br>
+              <span class="person">/ person</span>
+            </p>
+            <p class="totalValue">
+              $0.00
+            </p>
+          </div>
+        </div>
+
+        <div class="btns">
+          <button class="confirmar btnconfirmar">confirmar</button>
+          <!-- <button><img src="images/icons8-conta-64.png" width="20" alt=""></button> -->
+        </div>
+
+      </div>
+
+    </div>
+
+    <div data-containerExtrato="extrato" class="container containerExtrato">
+      <div>
+        <h5>EXTRATO <span>Items</span></h5>
+        <br>
+        <ol class="ListadeItem">
+        </ol>
+      </div>
+
+      <div class="valoresFinais">
+
+        <p>Total Items <span id="valorTotal"></span></p>
+        <p>Tip Amount <span id="valorTip">0%</span> (R$ <span id="ValorTipReais" >0</span>)</p>
+        <p>Divido por <span id="personNum">0</span> Pessoas</p>
+        <p>Total Pago! <span id="valorPerson">0</span></p>
+
+      </div>
+    </div>
+    <div class="container containerProdutos">
+      <!-- ENTRADAS -->
+      <div class="containerEntradas estilosItensMenu">
+      </div>
+      <!-- PRATOS PRINCIPAIS -->
+      <div class="containerPratosPricipais estilosItensMenu">
+      </div>
+      <!-- SOBREMESAS -->
+      <div class="containerSobremesas estilosItensMenu">
+      </div>
+      
+      <!-- DRINKS -->
+      <div class="containerDrinks estilosItensMenu">
+      </div>
+    </div>
+    
+        <div class="listaPedidos">
+          <h5>itens adicionados</h5>
+          <ul class="itensPedidos">
+          </ul>
+        </div>
+  </main>
+</body>
+
+</html>

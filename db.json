@@ -1,0 +1,72 @@
+{
+  "menu": {
+    "entradas": [
+      {
+        "nome": "Bruschetta",
+        "preco": 12.5
+      },
+      {
+        "nome": "Camarão Empanado",
+        "preco": 18.9
+      },
+      {
+        "nome": "Batata Frita",
+        "preco": 15.0
+      },
+      {
+        "nome": "Saladas",
+        "preco": 13.0
+      },
+      {
+        "nome": "Pipoquinha de Frango",
+        "preco": 16.0
+      },
+      {
+        "nome": "Madioquinha",
+        "preco": 18.0
+      },
+      {
+        "nome": "Iscas de Frango",
+        "preco": 9.99
+      },
+      {
+        "nome": "Tiras De Filé",
+        "preco": 28.0
+      }
+    ],
+    "pratos_principais": [
+      {
+        "nome": "Filé Mignon ao Molho Madeira",
+        "descricao": "Filé mignon grelhado com molho madeira e purê de batatas.",
+        "preco": 45.0
+      },
+      {
+        "nome": "Lasanha de Quatro Queijos",
+        "descricao": "Lasanha com molho branco e mistura de queijos especiais.",
+        "preco": 32.0
+      }
+    ],
+    "bebidas": [
+      {
+        "nome": "Suco de Laranja Natural",
+        "preco": 8.0
+      },
+      {
+        "nome": "Cerveja Artesanal",
+        "preco": 12.0
+      }
+    ],
+    "sobremesas": [
+      {
+        "nome": "Petit Gâteau",
+        "descricao": "Bolo de chocolate quente com sorvete de baunilha.",
+        "preco": 15.0
+      },
+      {
+        "nome": "Tiramisu",
+        "descricao": "Sobremesa italiana com mascarpone e café.",
+        "preco": 18.0
+      }
+    ]
+  }
+}
