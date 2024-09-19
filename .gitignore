@@ -16,3 +16,6 @@
 .prettierignore
 
 /node_modules
+.README-template.md
+.READMEMD
+.style-guide.md
